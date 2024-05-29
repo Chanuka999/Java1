@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class SelectionSort{
     public static void selectionsort(int[] arr){
         int size = arr.length;
@@ -20,9 +21,14 @@ public class SelectionSort{
     }
 }
    public static void main(String[] args){
-    int[] arr = {8,2,5,10,4};
+    int[] arr = new int[5];
 
     int size=5;
+    Scanner sun= new Scanner(System.in);
+    System.out.println("Enter the data:");
+    for(int i=0;i<size;i++){
+        arr[i]=sun.nextInt();
+    }
 
     System.out.println("brfore selection sort:");
     for(int k=0;k<size;k++){
