@@ -31,9 +31,15 @@ public class Stack{
             System.out.println("stack is Empty");
         }
         else{
-            System.out.println("Removing" + arr[top]);
+            System.out.println("Removing :" + arr[top]);
             top--;
 
+        }
+    }
+    void printStack(){
+        System.out.println("printing stack :");
+        for(int i=0;i<=top;i++){
+            System.out.println(arr[i]);
         }
     }
     public static void main(String[] args) {
@@ -43,9 +49,11 @@ public class Stack{
         myStack.push(20);
         myStack.push(30);
         myStack.push(40);
-        myStack.push(50);
-        
         myStack.pop();
+        myStack.pop();
+        
+      myStack.printStack();
+        
     }
   
 }
