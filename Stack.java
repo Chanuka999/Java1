@@ -42,6 +42,10 @@ public class Stack{
             System.out.println(arr[i]);
         }
     }
+
+    void size(){
+        System.out.println(top+1);
+    }
     public static void main(String[] args) {
         Stack myStack = new Stack(5);
 
@@ -53,6 +57,7 @@ public class Stack{
         myStack.pop();
         
       myStack.printStack();
+      myStack.size();
         
     }
   
