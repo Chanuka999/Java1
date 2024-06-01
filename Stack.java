@@ -16,7 +16,7 @@ public class Stack{
     boolean isEmpty(){
         return top == -1;
     }
-    void push(int x){
+    public  void push(int x){
         if(isFull()){
             System.out.println("stack is full");
         }else{
@@ -26,7 +26,7 @@ public class Stack{
         }
     }
 
-    void pop(){
+    public  void pop(){
         if(isEmpty()){
             System.out.println("stack is Empty");
         }
@@ -36,14 +36,14 @@ public class Stack{
 
         }
     }
-    void printStack(){
+   public  void printStack(){
         System.out.println("printing stack :");
         for(int i=0;i<=top;i++){
             System.out.println(arr[i]);
         }
     }
 
-    void size(){
+    public void size(){
         System.out.println(top+1);
     }
     public static void main(String[] args) {
